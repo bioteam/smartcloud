@@ -1,14 +1,18 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    hashie (1.0.0)
     json (1.5.3)
     mime-types (1.16)
     rest-client (1.6.3)
       mime-types (>= 1.16)
+    shoulda (2.11.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  hashie
   json
   rest-client
+  shoulda

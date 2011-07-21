@@ -1,0 +1,19 @@
+#!/usr/bin/env ruby
+#
+# List out the public ip's
+#
+
+$: << File.join(File.dirname(__FILE__), '..', 'lib') # include the lib dir
+
+require "smartcloud"
+require "pp"
+
+cloud = SmartCloud.new(ENV['IBM_USERNAME'], ENV['IBM_PASSWORD'])
+
+instances = cloud.instances
+instances.each do |i|
+  # pp i
+  if i['status'] == 5
+    puts "%s %s %s" % [i['primaryIP']['ip'].strip, i['primaryIP']['hostname'], i['name']]
+  end
+end

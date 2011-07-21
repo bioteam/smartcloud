@@ -1,0 +1,55 @@
+# Logfile created on 2011-07-19 21:27:30 -0400 by logger.rb/25413
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/keys/", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Timeout"=>"10"
+# => 200 OK | application/json 492 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/offerings/image/20024687", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Timeout"=>"10"
+# => 200 OK | application/json 917 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/offerings/image/", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Timeout"=>"10"
+# => 200 OK | application/json 903166 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/instances/", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Timeout"=>"10"
+# => 200 OK | application/json 16 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/keys/", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Timeout"=>"10"
+# => 200 OK | application/json 492 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/storage/", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Timeout"=>"10"
+# => 200 OK | application/json 217 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/keys/", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Timeout"=>"10"
+# => 200 OK | application/json 492 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/offerings/image/20024687", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Timeout"=>"10"
+# => 200 OK | application/json 917 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/offerings/image/", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Timeout"=>"10"
+# => 200 OK | application/json 903166 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/instances/", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Timeout"=>"10"
+# => 200 OK | application/json 16 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/keys/", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Timeout"=>"10"
+# => 200 OK | application/json 492 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/storage/", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Timeout"=>"10"
+# => 200 OK | application/json 217 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/keys/", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Timeout"=>"10"
+# => 200 OK | application/json 492 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/keys/", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Timeout"=>"10"
+# => 200 OK | application/json 492 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/offerings/image/20024687", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Timeout"=>"10"
+# => 200 OK | application/json 917 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/offerings/image/", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Timeout"=>"10"
+# => 200 OK | application/json 903166 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/instances/", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Timeout"=>"10"
+# => 200 OK | application/json 16 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/keys/", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Timeout"=>"10"
+# => 200 OK | application/json 492 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/storage/", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Timeout"=>"10"
+# => 200 OK | application/json 217 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/keys/", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Timeout"=>"10"
+# => 200 OK | application/json 492 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/keys/", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Timeout"=>"10"
+# => 200 OK | application/json 993 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/offerings/image/20024687", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Timeout"=>"10"
+# => 200 OK | application/json 917 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/offerings/image/", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Timeout"=>"10"
+# => 200 OK | application/json 904065 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/instances/", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Timeout"=>"10"
+# => 200 OK | application/json 1223 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/keys/", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Timeout"=>"10"
+# => 200 OK | application/json 993 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/storage/", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Timeout"=>"10"
+# => 200 OK | application/json 426 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/keys/", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Timeout"=>"10"
+# => 200 OK | application/json 993 bytes
