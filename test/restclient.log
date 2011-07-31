@@ -53,3 +53,37 @@ RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/2010033
 # => 200 OK | application/json 426 bytes
 RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/keys/", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Timeout"=>"10"
 # => 200 OK | application/json 993 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/images", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate"
+# => 500 InternalServerError | text/html 84 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/instances", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate"
+# => 200 OK | application/json 16 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/images", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate"
+# => 500 InternalServerError | text/html 84 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/instances", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate"
+# => 200 OK | application/json 16 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/keys", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate"
+# => 200 OK | application/json 1142 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/images", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate"
+# => 500 InternalServerError | text/html 84 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/instances", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate"
+# => 200 OK | application/json 16 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/keys", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate"
+# => 200 OK | application/json 1142 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/images", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate"
+# => 500 InternalServerError | text/html 84 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/instances", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate"
+# => 200 OK | application/json 16 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/keys", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate"
+# => 200 OK | application/json 1142 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/images", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate"
+# => 500 InternalServerError | text/html 84 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/instances", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate"
+# => 200 OK | application/json 16 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/keys", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate"
+# => 200 OK | application/json 1142 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/volumes", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate"
+# => 500 InternalServerError | text/html 85 bytes
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/images", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate"
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/instances", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate"
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/keys", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate"
+RestClient.get "https://www-147.ibm.com/computecloud/enterprise/api/rest/20100331/volumes", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate"

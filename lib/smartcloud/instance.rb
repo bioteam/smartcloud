@@ -24,7 +24,7 @@ class Instance < Hashie::Mash
   # 15  Detaching
   
   def human_readable_status
-    case self.code
+    case self.status
     when 0
       "New"
     when 1

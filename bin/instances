@@ -13,5 +13,5 @@ cloud = SmartCloud.new(ENV['IBM_USERNAME'], ENV['IBM_PASSWORD'])
 instances = cloud.instances
 instances.each do |i|
   # pp i
-  puts "%s\t%s\t%s\%s" % [i['name'], i['id'], i['primaryIP']['ip'], i['status']]
+  puts "%s\t%s\t%s\%s" % [i.name, i['id'], i['primaryIP']['ip'], i.human_readable_status]
 end
