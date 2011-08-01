@@ -3,16 +3,16 @@ GEM
   specs:
     hashie (1.0.0)
     json (1.5.3)
+    json (1.5.3-java)
     mime-types (1.16)
     rest-client (1.6.3)
       mime-types (>= 1.16)
-    shoulda (2.11.3)
 
 PLATFORMS
+  java
   ruby
 
 DEPENDENCIES
   hashie
   json
   rest-client
-  shoulda

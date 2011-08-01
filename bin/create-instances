@@ -1,0 +1,29 @@
+#!/usr/bin/env ruby
+#
+# Create instances
+#
+
+$: << File.join(File.dirname(__FILE__), '..', 'lib') # include the lib dir
+
+require "smartcloud"
+require "pp"
+
+cloud = SmartCloud.new(ENV['IBM_USERNAME'], ENV['IBM_PASSWORD'])
+
+MAX_INSTANCES=8
+
+total = cloud.instances.size
+running = cloud.running_instances.size
+
+puts "#{running}/#{total} RUNNING"
+
+# i = 3
+# 6.times do
+#   nm = "UCB_NODE%03d" % i
+#   response = cloud.create_instance({:name => nm})
+#   if response.code != 200
+#     raise "Failed to create instance #{nm}"
+#     exit
+#   end
+#   i+= 1
+# end

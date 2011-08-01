@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 #
-# List out the public ip's
+# List out the smartcloud instances
 #
 
 $: << File.join(File.dirname(__FILE__), '..', 'lib') # include the lib dir

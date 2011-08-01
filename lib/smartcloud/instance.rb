@@ -1,5 +1,6 @@
 #
-# This class describes a SmartCloud keypair
+# This class describes a SmartCloud instance
+#
 #
 require "hashie/mash"
 
@@ -58,6 +59,12 @@ class Instance < Hashie::Mash
     when 15
       "Detaching"
     end
+  end
+  
+  alias :show_status :human_readable_status
+  
+  def running?
+    self.status == 5 ? true : false
   end
   
 end

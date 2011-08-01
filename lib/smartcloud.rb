@@ -56,7 +56,7 @@ class SmartCloud
   def keys
     keys = []
     JSON.parse(resource['/keys'].get)["keys"].each do |k|
-      keys << Key.new
+      keys << Key.new(k)
     end
     return keys
   end
@@ -78,6 +78,18 @@ class SmartCloud
     }.merge!(options)
     
     resource['/instances'].post params
+  end
+  
+  def default_keypair
+    keys.select!{|k| k.default? }
+  end
+  
+  def running_instances
+    instances.select!{|i| i.running? }
+  end
+  
+  def log
+    logger
   end
 
 end
