@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+#
+# Delete all instances on SmartCloud
+#
+
+$: << File.join(File.dirname(__FILE__), '..', 'lib') # include the lib dir
+
+require "smartcloud"
+
+cloud = SmartCloud.new(ENV['IBM_USERNAME'], ENV['IBM_PASSWORD'])
+instances = cloud.instances
+instances.each do |i|
+  next unless i.running?
+  printf "Shutdown #{i.name}? [y/n] "
+  answer = gets.chomp
+  if answer == "y"
+    response = cloud.delete_instance(i['id'])
+    if response.code == 200
+      puts "Deleted #{i.name} id=#{i['id']}"
+    else
+      puts "Error: #{response.code} #{response.body}"
+    end
+  end
+end

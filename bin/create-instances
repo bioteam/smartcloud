@@ -1,29 +1,63 @@
 #!/usr/bin/env ruby
 #
-# Create instances
+# Create a batch of instances on SmartCloud
 #
 
 $: << File.join(File.dirname(__FILE__), '..', 'lib') # include the lib dir
 
 require "smartcloud"
 require "pp"
+require "logger"
+
+abort("usage: #{$0} prefix count") unless(ARGV[0] and ARGV[1])
+
+log = Logger.new(STDOUT)
+prefix=ARGV[0].to_s
+count=ARGV[1].to_i
+if ARGV[2]
+  start=ARGV[2].to_i
+else
+  start=0
+end
+
+def add_nodes
+  # count.times do
+  #    name = "#{prefix}%03d" % start
+  #    log.debug "name=#{name}"
+  #    response = cloud.create_instance({:name => name})
+  #    if response.code != 200
+  #      raise "Failed to create instance #{name}"
+  #      exit!
+  #    else
+  #      log.info "New #{name}"
+  #    end
+  #    start+=1 
+  #  end
+end
 
 cloud = SmartCloud.new(ENV['IBM_USERNAME'], ENV['IBM_PASSWORD'])
+instances = cloud.instances
 
-MAX_INSTANCES=8
+log.info "Found #{instances.size} instances"
+instances.map{|i| log.info "#{i.name} #{i.show_status}" }
 
-total = cloud.instances.size
-running = cloud.running_instances.size
+# Try to add N instances
+# we need to backoff on large requests
+#
 
-puts "#{running}/#{total} RUNNING"
+reqs = 0
+instances.each do |i|
+  if i.status == 0 or i.status == 1
+    log.debug(i)
+    reqs+= 1
+  end
+end
 
-# i = 3
-# 6.times do
-#   nm = "UCB_NODE%03d" % i
-#   response = cloud.create_instance({:name => nm})
-#   if response.code != 200
-#     raise "Failed to create instance #{nm}"
-#     exit
-#   end
-#   i+= 1
-# end
+log.info "#{reqs} pending instance requests"
+log.info "Adding #{count}"
+while (reqs + count) > 20
+  log.info "Too many requests; sleeping 2 mins"
+  sleep 60 * 2
+end
+
+add_nodes()

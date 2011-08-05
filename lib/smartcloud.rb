@@ -2,6 +2,7 @@ $:<< File.dirname(__FILE__) + '/lib'
 require "rest_client"
 require "json"
 require "logger"
+
 require "smartcloud/image"
 require "smartcloud/instance"
 require "smartcloud/volume"
@@ -78,6 +79,11 @@ class SmartCloud
     }.merge!(options)
     
     resource['/instances'].post params
+  end
+  
+  def delete_instance(id)
+    instance_id = id.to_i
+    resource["/instances/#{instance_id}"].delete
   end
   
   def default_keypair
