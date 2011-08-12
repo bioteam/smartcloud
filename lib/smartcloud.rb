@@ -16,11 +16,7 @@ class SmartCloud
   BASE_URI = "https://www-147.ibm.com/computecloud/enterprise/api/rest/"
   
   def initialize(u, p, logger=Logger.new('restclient.log'))
-    
-    uri = URI.join BASE_URI, VERSION
-    RestClient.log = logger
-    
-    @resource = Resource.new uri, :user => u, :password => p, :headers => { :accept => :json}
+    @resource = Resource.new URI.join BASE_URI, VERSION, :user => u, :password => p, :headers => { :accept => :json}
   end
   
   def resource
