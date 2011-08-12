@@ -5,7 +5,7 @@ A ruby interface to IBM SmartCloud Enterprise.
 
 See: https://www.ibm.com/cloud/enterprise
 
-Gem Requirements
+Gem Dependencies
 ================
 
 * json

@@ -1,4 +1,4 @@
-source :rubygems
-gem "json"
-gem "rest-client"
-gem "hashie"
+source "http://rubygems.org"
+
+# Specify your gem's dependencies in smartcloud.gemspec
+gemspec

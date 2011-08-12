@@ -3,8 +3,6 @@
 # Create a batch of instances on SmartCloud
 #
 
-$: << File.join(File.dirname(__FILE__), '..', 'lib') # include the lib dir
-
 require "smartcloud"
 require "pp"
 require "logger"

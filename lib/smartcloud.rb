@@ -1,4 +1,3 @@
-$:<< File.dirname(__FILE__) + '/lib'
 require "rest_client"
 require "json"
 require "logger"

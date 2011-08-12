@@ -3,8 +3,6 @@
 # Delete all instances on SmartCloud
 #
 
-$: << File.join(File.dirname(__FILE__), '..', 'lib') # include the lib dir
-
 require "smartcloud"
 
 cloud = SmartCloud.new(ENV['IBM_USERNAME'], ENV['IBM_PASSWORD'])

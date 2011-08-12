@@ -3,8 +3,6 @@
 # List out the public ip's
 #
 
-$: << File.join(File.dirname(__FILE__), '..', 'lib') # include the lib dir
-
 require "smartcloud"
 require "pp"
 
