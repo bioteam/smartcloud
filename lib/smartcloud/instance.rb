@@ -1,7 +1,6 @@
 #
 # This class describes a SmartCloud instance
 #
-#
 require "hashie/mash"
 
 class Instance < Hashie::Mash

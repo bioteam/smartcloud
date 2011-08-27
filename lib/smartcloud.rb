@@ -15,8 +15,8 @@ class SmartCloud
   VERSION = '20100331'
   BASE_URI = "https://www-147.ibm.com/computecloud/enterprise/api/rest/"
   
-  def initialize(u, p, logger=Logger.new('restclient.log'))
-    @resource = Resource.new URI.join BASE_URI, VERSION, :user => u, :password => p, :headers => { :accept => :json}
+  def initialize(u, p)
+    @resource = Resource.new URI.join(BASE_URI, VERSION), :user => u, :password => p, :headers => { :accept => :json}
   end
   
   def resource
@@ -71,7 +71,7 @@ class SmartCloud
       :publicKey => 'ucb-development',
       :isMiniEphemeral => 'true',
       :location => "101"
-    }.merge!(options)
+    }.merge(options)
     
     resource['/instances'].post params
   end

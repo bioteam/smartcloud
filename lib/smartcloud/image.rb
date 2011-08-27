@@ -1,9 +1,7 @@
-class Image
-  attr_accessor :resource
-  def initialize
-  end 
-  
-  def resource
-    @resource = Resource.new
-  end
+#
+# This class describes a SmartCloud image
+#
+require "hashie/mash"
+
+class Image < Hashie::Mash
 end
