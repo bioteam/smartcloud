@@ -17,6 +17,13 @@ Installation
 
 `gem install smartcloud`
 
+You should also set environment variables for the executables to work
+
+```bash
+export IBM_USERNAME='user@example.com'
+export IBM_PASSWORD='s3cr3t'
+```
+
 Usage
 =====
 
@@ -56,7 +63,7 @@ response = cloud.create_instance({
   :imageID => '20026860',
   :instanceType => 'COP64.2/4096/60',
   :location => "121",
-  :publicKey => 'ucb-development',
+  :publicKey => 'sce-dev',
   :ip => nil,
   :VolumeID => nil,
   :ConfigurationData => nil,
@@ -71,7 +78,8 @@ All of the objects are really just a Mash, so you can work with attributes in se
 
 ```ruby
 instance = cloud.instances.first
-instance.name # => 'smartcloud-test'
-instance['name'] => 'smartcloud-test'
-instance[:name] => 'smartcloud-test'
+instance.name # #=> 'smartcloud-test'
+instance['name'] #=> 'smartcloud-test'
+instance[:name] #=> 'smartcloud-test'
 ```
+

@@ -35,7 +35,7 @@ describe "smartcloud" do
   #     :imageID => '20026860',
   #     :instanceType => 'COP64.2/4096/60',
   #     :location => "121",
-  #     :publicKey => 'ucb-development',
+  #     :publicKey => 'sce-development',
   #     # :ip => nil,
   #     # :VolumeID => nil,
   #     # :ConfigurationData => nil,
