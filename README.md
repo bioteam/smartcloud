@@ -21,7 +21,8 @@ Usage
 =====
 
 Some useful commands are included
-```
+
+```bash
 $ ic-instances
 fs01        	123840	170.225.188.137 Active         	
 node_2  	124558	170.225.189.162 Active         	
@@ -39,12 +40,14 @@ $ ic-get-hostlist
 ```
 
 List available images
+
 ```ruby
 cloud = SmartCloud.new(ENV['IBM_USERNAME'], ENV['IBM_PASSWORD'])
 images = cloud.images
 ```
 
 Create a server
+
 ```ruby
 cloud = SmartCloud.new(ENV['IBM_USERNAME'], ENV['IBM_PASSWORD'])
 
