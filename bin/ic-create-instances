@@ -3,8 +3,8 @@
 # Create a batch of instances on SmartCloud
 #
 
+require "optionparser"
 require "smartcloud"
-require "pp"
 require "logger"
 
 abort("usage: #{$0} prefix count") unless(ARGV[0] and ARGV[1])

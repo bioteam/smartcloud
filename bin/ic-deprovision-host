@@ -1,0 +1,21 @@
+#!/usr/bin/env ruby
+#
+# Delete instance by hostname
+#
+require "smartcloud"
+
+abort("usage: #{$0} fqdn") unless(ARGV[0])
+
+host=ARGV[0].to_s
+
+puts "Deprovisioning #{host}..."
+cloud = SmartCloud.new(ENV['IBM_USERNAME'], ENV['IBM_PASSWORD'])
+instances = cloud.instances.select{|i| i['primaryIP']['hostname'] == host}
+p instances
+if !instances.empty?
+  instances.each do |i|
+    cloud.delete_instance(i['id'])
+  end
+else
+  puts "#{host} not found!"
+end

@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    smartcloud (0.0.3)
+    smartcloud (0.0.4)
       hashie
       json
       rest-client
@@ -12,7 +12,6 @@ GEM
     diff-lcs (1.1.2)
     hashie (1.1.0)
     json (1.5.3)
-    json (1.5.3-java)
     mime-types (1.16)
     rest-client (1.6.3)
       mime-types (>= 1.16)

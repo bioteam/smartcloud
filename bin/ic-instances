@@ -2,9 +2,6 @@
 #
 # List out the smartcloud instances
 #
-
-$: << File.join(File.dirname(__FILE__), '..', 'lib') # include the lib dir
-
 require "smartcloud"
 require "pp"
 
@@ -13,5 +10,5 @@ cloud = SmartCloud.new(ENV['IBM_USERNAME'], ENV['IBM_PASSWORD'])
 instances = cloud.instances
 instances.each do |i|
   # pp i
-  puts "%s\t%s\t%s\%s" % [i.name, i['id'], i['primaryIP']['ip'], i.human_readable_status]
+  puts "%-12s\t%s\t%s\%-15s\t%s" % [i.name, i['id'], i['primaryIP']['ip'], i.human_readable_status, i.instance_type]
 end

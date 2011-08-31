@@ -66,4 +66,19 @@ class Instance < Hashie::Mash
     self.status == 5 ? true : false
   end
   
+  def instance_type
+    case self.instanceType
+    when "COP64.2/4096/60"
+      self.flavor = "Copper"
+    when "BRZ64.2/4096/60*500*350"
+      self.flavor = "Bronze"
+    when "SLV64.4/8192/60*500*500"
+      self.flavor = "Silver" 
+    when "GLD64.8/16384/60*500*500"
+      self.flavor = "Gold"
+    when "PLT64.16/16384/60*500*500*500*500"
+      self.flavor = "Platinum"
+    end
+  end
+  
 end
